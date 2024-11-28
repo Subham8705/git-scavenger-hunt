@@ -8,7 +8,7 @@ int main() {
 
     printf("Loops are fun!\n");
 
-
+    while(1);
     printf("Well, %s, we hope you are having fun with our git-game!\n", input);
 
     return 0;
