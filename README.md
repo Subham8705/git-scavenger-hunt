@@ -5,4 +5,4 @@ CODE : _ _ _ _ _
 
 ---------------------------------------------------------------------------------------------------------------------------
  ENTER THE CODE HERE :
- https://docs.google.com/forms/d/e/1FAIpQLSex3TNwz8eEreIIAYrRX__ITZjUv54KxaYLjYf_ffv0abJ_Ew/viewform?usp=sf_link
+ https://forms.gle/KZDfE25aXJ4wBbqFA
