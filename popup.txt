@@ -6,3 +6,7 @@ Or the system will cast you back to the start."
 
 The jumbled words flash:
 "TCOIMM ITRHSOY" 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Hint: Use the git command related to the solution.
