@@ -1,0 +1,12 @@
+LEVEL 1
+
+As you continue through the digital landscape, you encounter a towering firewall blocking your path. It pulses with bright, red warning signs and shields its entry with layers of complex encryption. To proceed, you must bypass the firewall’s security protocols without triggering any alarms.
+Solve the cipher to proceed.
+
+CIPHER
+transform this into a word using your coding knowledge.
+68,69,67,82,89,80,84
+
+------------------------------------------------------------------------------
+
+Hint : Write the solution in a file named "ans.txt" and commit it.

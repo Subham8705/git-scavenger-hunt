@@ -1,0 +1,60 @@
+#!/bin/bash
+
+echo "Running pre-commit hook..."
+
+# Check if ans.txt exists
+if [ -f "./ans.txt" ]; then
+  # Read the answer from ans.txt
+  ANSWER=$(<./ans.txt)
+
+  # Expected answer for Level 1
+  EXPECTED="DECRYPT"
+
+  # Compare the answer in ans.txt with the expected answer
+  if [ "$ANSWER" == "$EXPECTED" ]; then
+    echo "Answer verified successfully. Proceeding with the commit."
+
+    # Green colored success messages
+    echo -e "\e[32mCongratulations! You've completed Level 1.\e[0m"
+    echo -e "\e[32mWelcome to Level 2!\e[0m"
+
+    # Game scenario messages
+    echo "While running, you find yourself at a crossroads with three paths to choose from."
+    echo "Be aware of the consequences, as choosing the wrong path may lead to your demise,"
+    echo "while the right path will bring you closer to your escape."
+    echo " "
+    echo "The paths are labeled:"
+    echo " "
+    echo "1) Glitch-Cavern"
+    echo "2) Buffering-Portal"
+    echo "3) Virus-Bridge"
+    echo " "
+    echo "Before you can choose, a digital voice booms:"
+    echo "'Answer this question to find the correct path:'"
+    echo " "
+    echo -e "\e[96mQuestion\e[0m"
+    echo -e "\e[96mWhat is the function of the git status command?\e[0m"
+    echo -e "\e[96mOptions:\e[0m"
+    echo -e "\e[96mA) It shows the current branch and untracked files.\e[0m"
+    echo -e "\e[96mB) It stages changes for the next commit.\e[0m"
+    echo -e "\e[96mC) It removes files from the staging area.\e[0m"
+    echo " "
+    echo "Path Matching:"
+    echo "1) Glitch Cavern corresponds to Option A."
+    echo "2) Buffering Portal corresponds to Option B."
+    echo "3) Virus Bridge corresponds to Option C."
+    echo " "
+
+    # Remove ans.txt to indicate progression to the next level
+    rm ./ans.txt
+    echo "Level 1 file 'ans.txt' has been removed as you progress to Level 2."
+
+    exit 0  # Allow the commit
+  else
+    echo -e "\e[31mError: The answer in ans.txt is incorrect. Expected: DECRYPT\e[0m"
+    exit 1  # Prevent the commit
+  fi
+else
+  echo "Error: ans.txt does not exist. Please create the file with the correct answer."
+  exit 1  # Prevent the commit if ans.txt is missing
+fi
