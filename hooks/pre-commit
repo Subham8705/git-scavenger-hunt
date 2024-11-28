@@ -29,7 +29,7 @@ if [ -f "./ans.txt" ]; then
     echo "2) Buffering-Portal"
     echo "3) Virus-Bridge"
     echo " "
-    echo "Before you can choose, a digital voice booms:"
+    echo "Before you can choose, you hear a digital voice saying:"
     echo "'Answer this question to find the correct path:'"
     echo " "
     echo -e "\e[96mQuestion\e[0m"
@@ -40,12 +40,11 @@ if [ -f "./ans.txt" ]; then
     echo -e "\e[96mC) It removes files from the staging area.\e[0m"
     echo " "
     echo "Path Matching:"
-    echo "1) Glitch Cavern corresponds to Option A."
-    echo "2) Buffering Portal corresponds to Option B."
-    echo "3) Virus Bridge corresponds to Option C."
+    echo "1) Glitch-Cavern corresponds to Option A."
+    echo "2) Buffering-Portal corresponds to Option B."
+    echo "3) Virus-Bridge corresponds to Option C."
     echo " "
 
-    # Remove ans.txt to indicate progression to the next level
     rm ./ans.txt
     echo "Level 1 file 'ans.txt' has been removed as you progress to Level 2."
 
